@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string-array name="updateInterval">
+        <item name="1000">Every 1 second</item>
+        <item name="5000">Every 5 seconds</item>
+        <item name="30000">Every 30 seconds</item>
+        <item name="60000">Every 1 minute</item>
+        <item name="300000">Every 5 minutes</item>
+    </string-array>
+    <string-array name="updateIntervalValues">
+        <item name="1000">1000</item>
+        <item name="5000">5000</item>
+        <item name="30000">30000</item>
+        <item name="60000">60000</item>
+        <item name="300000">300000</item>
+    </string-array>
+    <string-array name="dicts">
+        <!--<item name="af">Afrikaans</item>
+        <item name="am">Amharic አማርኛ</item>
+        <item name="ar">Arabic عربي</item>
+        <item name="ast">Asturian Asturianu </item>
+        <item name="az">Azerbaijani	Azərbaycanca</item>
+        <item name="be">Belarusian Беларускі</item>
+        <item name="bg">Bulgarian Български</item>
+        <item name="bn">Bengali বাংলা</item>
+        <item name="br">Breton</item>
+        <item name="ca">Catalan</item>
+        <item name="cs">Czech	Čeština</item>
+        <item name="csb">Kashubian Kaszëbsczi</item>
+        <item name="cy">Welsh</item>
+        <item name="da">Danish Dansk</item>
+        <item name="de">German</item>
+        <item name="el">Greek</item>
+        <item name="en">English</item>
+        <item name="eo">Esperanto</item>
+        <item name="es">Spanish Español</item>
+        <item name="et">Estonian</item>-->
+        <item name="sv">Swedish</item>
+    </string-array>
+    
+
+
+
+<string-array name="dictsVals">
+     <!--<item name="af">af</item>
+     <item name="am">am</item>
+     <item name="ar">ar</item>
+     <item name="ast">as</item>
+     <item name="az">az</item>
+     <item name="be">be</item>
+     <item name="bg">bg</item>
+     <item name="bn">bn</item>
+     <item name="br">br</item>
+     <item name="ca">ca</item>
+     <item name="cs">cs</item>
+     <item name="csb">cs</item>
+     <item name="cy">cy</item>
+     <item name="da">da</item>
+     <item name="de">de</item>
+     <item name="el">el</item>
+     <item name="en">en</item>
+     <item name="eo">eo</item>
+     <item name="es">es</item>
+     <item name="et">et</item> -->
+     <item name="sv">sv</item>
+ </string-array>
+    
+    <!--
+fa	Persian	فارسی	
+fi	Finnish	 	
+fo	Faroese	Føroyskt	
+fr	French	Fran	
+fy	Frisian	Frysk	
+ga	Irish	Gaeilge	
+gd	Scottish Gaelic	Gàidhlig	
+gl	Galician	Galego (minimos)	
+grc	Ancient Greek	 	
+gu	Gujarati	ગુજરાતી	
+gv	Manx Gaelic	 	
+he	Hebrew	עברית	
+hi	Hindi	हिंदी	
+hil	Hiligaynon	 
+hr	Croatian	 
+
+hu	Hungarian	 	
+hy	Armenian	Հայերեն	
+ia	Interlingua	 	
+id	Indonesian	
+is	Icelandic	
+it	Italian	
+kn	Kannada	ಕನ್ನಡ	
+ku	Kurdi	Kurdî	
+ky	Kirghiz	 	
+la	Latin	 	
+lt	Lithuanian	lietuvių	
+lv	Latvian	 	
+mg	Malagasy	
+mi	Maori	 	
+mk	Macedonian	
+ml	Malayalam	മലയാളം	
+mn	Mongolian	Монгол	
+mr	Marathi	मराठी	
+ms	Malay	 	
+mt	Maltese	 	
+nb	Norwegian Bokmal	 	
+nds	Low Saxon	Plattdüütsch	
+nl	Dutch	 	
+nn	Norwegian Nynorsk	 	
+ny	Chichewa	 	
+or	Oriya	ଓଡ଼ିଆ	
+pa	Punjabi	ਪੰਜਾਬੀ	
+pl	Polish	polski	
+pt_BR	Brazilian Portuguese	 
+pt_PT	Portuguese	português	
+qu	Quechua	Runasimi (qheshwa)	
+ro	Romanian	Română	
+ru	Russian	Русский	
+rw	Kinyarwanda	 	
+sc	Sardinian	 	
+sk	Slovak	Slovenský	
+sl	Slovenian	 	
+sr	Serbian	Српски	
+sv	Swedish	 	
+sw	Swahili	Kiswahili	
+ta	Tamil	தமிழ்	
+te	Telugu	తెలుగు	
+tet	Tetum	 	
+tk	Turkmen	 	
+tl	Tagalog	Tagalog	
+tn	Setswana	 	
+tr	Turkish	 	
+uk	Ukrainian	Українська	
+uz	Uzbek	Ўзбекча	
+vi	Vietnamese	Việt ngữ	
+wa	Walloon	walon	
+yi	Yiddish	ייִדיש	
+zu	Zulu	 	
+af	Afrikaans	 	
+be	Belarusian	Беларускі	
+bg	Bulgarian	 	
+br	Breton	 	
+ca	Catalan	
+cs	Czech	 	
+cy	Welsh	 	
+da	Danish	Dansk
+de	German	 	
+el	Greek	 	
+en	English	 	
+eo	Esperanto	
+es	Spanish	Espa
+fo	Faroese	Føroyskt	
+fr	French	Fran	
+ga	Irish	Gaeilge	
+gd	Scottish Gaelic	Gàidhlig
+gl	Galician	Galego	
+gv	Manx Gaelic	 	
+hil	Hiligaynon	 	
+hr	Croatian	 	
+ia	Interlingua	 	
+id	Indonesian	Bahasa Indonesia	
+is	Icelandic		
+it	Italian	 	
+ku	Kurdi	Kurdî	
+mg	Malagasy	 	
+mi	Maori	 	
+mk	Macedonian	
+ms	Malay	 	
+mt	Maltese	 	
+nb	Norwegian Bokmal
+nl	Dutch	 	
+nn	Norwegian Nynorsk
+ny	Chichewa	 	
+pl	Polish	polski	
+pt	Portuguese	 	
+ro	Romanian	Română
+ru	Russian	 	
+rw	Kinyarwanda	
+sc	Sardinian	
+sk	Slovak	 	
+sl	Slovenian	
+sv	Swedish	 	
+sw	Swahili	Kiswahili
+tet	Tetum	 	
+tk	Turkmen	 	
+tl	Tagalog	Tagalog	
+tn	Setswana	 	
+tr	Turkish	 	
+uk	Ukrainian	 	
+wa	Walloon	walon	
+zu	Zulu
+    -->
+
+</resources>

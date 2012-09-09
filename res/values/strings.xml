@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">ASpell Swedish Spellchecker</string>
+    <string name="settings">ASpell Swedish Spellchecker Settings</string>
+    <string name="subtype">Swedish</string>
+
+</resources>

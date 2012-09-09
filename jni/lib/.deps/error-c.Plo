@@ -1,0 +1,3 @@
+lib/error-c.lo: lib/error-c.cpp common/error.hpp
+
+common/error.hpp:

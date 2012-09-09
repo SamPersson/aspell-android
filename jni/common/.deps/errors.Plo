@@ -1,0 +1,27 @@
+common/errors.lo: common/errors.cpp gen/settings.h common/gettext.h \
+ /usr/include/libintl.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h common/error.hpp common/errors.hpp
+
+gen/settings.h:
+
+common/gettext.h:
+
+/usr/include/libintl.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/predefs.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+common/error.hpp:
+
+common/errors.hpp:

@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 
+    <PreferenceCategory 
+        android:title="Dictionary Selection"
+        android:key="first_category">
+        
+        <CheckBoxPreference 
+            android:key="perform_updates"
+            android:summary="Download missing dictionaries"
+            android:title="Enable updates" 
+            android:defaultValue="true"
+        android:enabled="false"/>
+        
+        <ListPreference 
+            android:key="available_dicts"
+            android:title="Selected dictionary"
+            android:summary="Select which dictionaries to download"
+            android:defaultValue="sv" 
+            android:entries="@array/dicts"
+            android:entryValues="@array/dictsVals"
+            android:dependency="perform_updates"
+        />    
+            
+    </PreferenceCategory>
+     -->
+</PreferenceScreen>

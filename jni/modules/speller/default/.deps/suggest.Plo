@@ -1,0 +1,433 @@
+modules/speller/default/suggest.lo: modules/speller/default/suggest.cpp \
+ common/getdata.hpp \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include-fixed/limits.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/stdio_lim.h common/string.hpp /usr/include/string.h \
+ /usr/include/xlocale.h /usr/include/bits/string3.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/types.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/time.h /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib.h \
+ /usr/include/c++/4.5/algorithm /usr/include/c++/4.5/utility \
+ /usr/include/c++/4.5/x86_64-linux-gnu/bits/c++config.h \
+ /usr/include/c++/4.5/x86_64-linux-gnu/bits/os_defines.h \
+ /usr/include/c++/4.5/x86_64-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/4.5/bits/stl_relops.h \
+ /usr/include/c++/4.5/bits/stl_pair.h /usr/include/c++/4.5/bits/move.h \
+ /usr/include/c++/4.5/cstddef /usr/include/c++/4.5/bits/concept_check.h \
+ /usr/include/c++/4.5/bits/stl_algobase.h \
+ /usr/include/c++/4.5/bits/functexcept.h \
+ /usr/include/c++/4.5/exception_defines.h \
+ /usr/include/c++/4.5/bits/cpp_type_traits.h \
+ /usr/include/c++/4.5/ext/type_traits.h \
+ /usr/include/c++/4.5/ext/numeric_traits.h \
+ /usr/include/c++/4.5/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.5/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.5/bits/stl_iterator.h \
+ /usr/include/c++/4.5/debug/debug.h /usr/include/c++/4.5/bits/stl_algo.h \
+ /usr/include/c++/4.5/cstdlib /usr/include/c++/4.5/bits/algorithmfwd.h \
+ /usr/include/c++/4.5/initializer_list \
+ /usr/include/c++/4.5/bits/stl_heap.h \
+ /usr/include/c++/4.5/bits/stl_tempbuf.h \
+ /usr/include/c++/4.5/bits/stl_construct.h /usr/include/c++/4.5/new \
+ /usr/include/c++/4.5/exception \
+ /usr/include/c++/4.5/bits/stl_uninitialized.h common/hash_fun.hpp \
+ common/parm_string.hpp common/mutable_string.hpp common/ostream.hpp \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ common/istream.hpp common/fstream.hpp /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
+ /usr/include/bits/stdio2.h common/posib_err.hpp common/error.hpp \
+ common/errors.hpp common/ndebug.hpp \
+ modules/speller/default/speller_impl.hpp /usr/include/c++/4.5/vector \
+ /usr/include/c++/4.5/bits/allocator.h \
+ /usr/include/c++/4.5/x86_64-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/4.5/ext/new_allocator.h \
+ /usr/include/c++/4.5/bits/stl_vector.h \
+ /usr/include/c++/4.5/bits/stl_bvector.h \
+ /usr/include/c++/4.5/bits/vector.tcc common/clone_ptr.hpp \
+ common/generic_copy_ptr.hpp common/copy_ptr.hpp \
+ common/generic_copy_ptr-t.hpp modules/speller/default/data.hpp \
+ common/ndebug.hpp /usr/include/assert.h common/enumeration.hpp \
+ common/clone_ptr-t.hpp common/clone_ptr.hpp \
+ /usr/include/c++/4.5/typeinfo modules/speller/default/language.hpp \
+ modules/speller/default/affix.hpp common/posib_err.hpp \
+ modules/speller/default/wordinfo.hpp common/string.hpp \
+ common/parm_string.hpp common/simple_string.hpp common/char_vector.hpp \
+ common/objstack.hpp common/cache.hpp common/config.hpp \
+ common/can_have_error.hpp common/copy_ptr.hpp common/key_info.hpp \
+ common/vector.hpp common/convert.hpp common/char_vector.hpp \
+ common/filter_char.hpp common/filter_char_vector.hpp \
+ common/stack_ptr.hpp common/filter.hpp \
+ common/string_pair_enumeration.hpp common/string_pair.hpp \
+ common/cache.hpp modules/speller/default/phonetic.hpp \
+ common/stack_ptr.hpp common/string_enumeration.hpp common/type_id.hpp \
+ common/iostream.hpp common/fstream.hpp common/word_list.hpp \
+ common/speller.hpp modules/speller/default/check_list.hpp \
+ modules/speller/default/asuggest.hpp modules/speller/default/suggest.hpp \
+ modules/speller/default/editdist.hpp modules/speller/default/weights.hpp \
+ modules/speller/default/typo_editdist.hpp \
+ modules/speller/default/matrix.hpp common/basic_list.hpp \
+ /usr/include/c++/4.5/list /usr/include/c++/4.5/bits/stl_list.h \
+ /usr/include/c++/4.5/bits/list.tcc common/clone_ptr-t.hpp \
+ modules/speller/default/editdist2.hpp \
+ modules/speller/default/leditdist.hpp /usr/include/c++/4.5/cassert \
+ common/errors.hpp common/file_data_util.hpp common/hash-t.hpp \
+ common/hash.hpp /usr/include/c++/4.5/functional \
+ /usr/include/c++/4.5/bits/stl_function.h \
+ /usr/include/c++/4.5/backward/binders.h gen/settings.h \
+ common/block_slist.hpp common/block_slist-t.hpp common/vararray.hpp \
+ common/string_list.hpp common/string_enumeration.hpp \
+ common/mutable_container.hpp /usr/include/c++/4.5/cstdio \
+ common/gettext.h /usr/include/libintl.h
+
+common/getdata.hpp:
+
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h:
+
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include-fixed/limits.h:
+
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/predefs.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+common/string.hpp:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/string3.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib.h:
+
+/usr/include/c++/4.5/algorithm:
+
+/usr/include/c++/4.5/utility:
+
+/usr/include/c++/4.5/x86_64-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/4.5/x86_64-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/4.5/x86_64-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/4.5/bits/stl_relops.h:
+
+/usr/include/c++/4.5/bits/stl_pair.h:
+
+/usr/include/c++/4.5/bits/move.h:
+
+/usr/include/c++/4.5/cstddef:
+
+/usr/include/c++/4.5/bits/concept_check.h:
+
+/usr/include/c++/4.5/bits/stl_algobase.h:
+
+/usr/include/c++/4.5/bits/functexcept.h:
+
+/usr/include/c++/4.5/exception_defines.h:
+
+/usr/include/c++/4.5/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.5/ext/type_traits.h:
+
+/usr/include/c++/4.5/ext/numeric_traits.h:
+
+/usr/include/c++/4.5/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.5/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.5/bits/stl_iterator.h:
+
+/usr/include/c++/4.5/debug/debug.h:
+
+/usr/include/c++/4.5/bits/stl_algo.h:
+
+/usr/include/c++/4.5/cstdlib:
+
+/usr/include/c++/4.5/bits/algorithmfwd.h:
+
+/usr/include/c++/4.5/initializer_list:
+
+/usr/include/c++/4.5/bits/stl_heap.h:
+
+/usr/include/c++/4.5/bits/stl_tempbuf.h:
+
+/usr/include/c++/4.5/bits/stl_construct.h:
+
+/usr/include/c++/4.5/new:
+
+/usr/include/c++/4.5/exception:
+
+/usr/include/c++/4.5/bits/stl_uninitialized.h:
+
+common/hash_fun.hpp:
+
+common/parm_string.hpp:
+
+common/mutable_string.hpp:
+
+common/ostream.hpp:
+
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h:
+
+common/istream.hpp:
+
+common/fstream.hpp:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/bits/stdio2.h:
+
+common/posib_err.hpp:
+
+common/error.hpp:
+
+common/errors.hpp:
+
+common/ndebug.hpp:
+
+modules/speller/default/speller_impl.hpp:
+
+/usr/include/c++/4.5/vector:
+
+/usr/include/c++/4.5/bits/allocator.h:
+
+/usr/include/c++/4.5/x86_64-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/4.5/ext/new_allocator.h:
+
+/usr/include/c++/4.5/bits/stl_vector.h:
+
+/usr/include/c++/4.5/bits/stl_bvector.h:
+
+/usr/include/c++/4.5/bits/vector.tcc:
+
+common/clone_ptr.hpp:
+
+common/generic_copy_ptr.hpp:
+
+common/copy_ptr.hpp:
+
+common/generic_copy_ptr-t.hpp:
+
+modules/speller/default/data.hpp:
+
+common/ndebug.hpp:
+
+/usr/include/assert.h:
+
+common/enumeration.hpp:
+
+common/clone_ptr-t.hpp:
+
+common/clone_ptr.hpp:
+
+/usr/include/c++/4.5/typeinfo:
+
+modules/speller/default/language.hpp:
+
+modules/speller/default/affix.hpp:
+
+common/posib_err.hpp:
+
+modules/speller/default/wordinfo.hpp:
+
+common/string.hpp:
+
+common/parm_string.hpp:
+
+common/simple_string.hpp:
+
+common/char_vector.hpp:
+
+common/objstack.hpp:
+
+common/cache.hpp:
+
+common/config.hpp:
+
+common/can_have_error.hpp:
+
+common/copy_ptr.hpp:
+
+common/key_info.hpp:
+
+common/vector.hpp:
+
+common/convert.hpp:
+
+common/char_vector.hpp:
+
+common/filter_char.hpp:
+
+common/filter_char_vector.hpp:
+
+common/stack_ptr.hpp:
+
+common/filter.hpp:
+
+common/string_pair_enumeration.hpp:
+
+common/string_pair.hpp:
+
+common/cache.hpp:
+
+modules/speller/default/phonetic.hpp:
+
+common/stack_ptr.hpp:
+
+common/string_enumeration.hpp:
+
+common/type_id.hpp:
+
+common/iostream.hpp:
+
+common/fstream.hpp:
+
+common/word_list.hpp:
+
+common/speller.hpp:
+
+modules/speller/default/check_list.hpp:
+
+modules/speller/default/asuggest.hpp:
+
+modules/speller/default/suggest.hpp:
+
+modules/speller/default/editdist.hpp:
+
+modules/speller/default/weights.hpp:
+
+modules/speller/default/typo_editdist.hpp:
+
+modules/speller/default/matrix.hpp:
+
+common/basic_list.hpp:
+
+/usr/include/c++/4.5/list:
+
+/usr/include/c++/4.5/bits/stl_list.h:
+
+/usr/include/c++/4.5/bits/list.tcc:
+
+common/clone_ptr-t.hpp:
+
+modules/speller/default/editdist2.hpp:
+
+modules/speller/default/leditdist.hpp:
+
+/usr/include/c++/4.5/cassert:
+
+common/errors.hpp:
+
+common/file_data_util.hpp:
+
+common/hash-t.hpp:
+
+common/hash.hpp:
+
+/usr/include/c++/4.5/functional:
+
+/usr/include/c++/4.5/bits/stl_function.h:
+
+/usr/include/c++/4.5/backward/binders.h:
+
+gen/settings.h:
+
+common/block_slist.hpp:
+
+common/block_slist-t.hpp:
+
+common/vararray.hpp:
+
+common/string_list.hpp:
+
+common/string_enumeration.hpp:
+
+common/mutable_container.hpp:
+
+/usr/include/c++/4.5/cstdio:
+
+common/gettext.h:
+
+/usr/include/libintl.h:

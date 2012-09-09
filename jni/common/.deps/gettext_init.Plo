@@ -1,0 +1,3 @@
+common/gettext_init.lo: common/gettext_init.cpp common/gettext.h
+
+common/gettext.h:

@@ -1,0 +1,8 @@
+modules/speller/default/leditdist.lo: \
+ modules/speller/default/leditdist.cpp \
+ modules/speller/default/leditdist.hpp \
+ modules/speller/default/weights.hpp
+
+modules/speller/default/leditdist.hpp:
+
+modules/speller/default/weights.hpp:

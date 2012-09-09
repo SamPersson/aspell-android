@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gr.padeler.aspellchecker"
+    android:versionCode="1"
+    android:versionName="0.1" android:installLocation="internalOnly">
+
+    <uses-sdk android:minSdkVersion="14" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/name" >
+        <activity
+            android:name="ASpellCheckerActivity"
+            android:label="@string/name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<!--<category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+        
+        <service
+            android:label="@string/name"
+            android:name="ASpellCheckerService"
+            android:permission="android.permission.BIND_TEXT_SERVICE" >
+            <intent-filter >
+                <action android:name="android.service.textservice.SpellCheckerService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.textservice.scs"
+                android:resource="@xml/spellchecker" />
+        </service>
+        
+    </application>
+</manifest>

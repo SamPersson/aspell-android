@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The attributes in this XML file provide the configuration information -->
+<!-- for the spell checker -->
+
+<spell-checker xmlns:android="http://schemas.android.com/apk/res/android"
+        android:label="@string/name"
+        android:settingsActivity="gr.padeler.aspellchecker.ASpellCheckerActivity">
+    <subtype
+            android:label="@string/subtype"
+            android:subtypeLocale="sv"  />
+</spell-checker>

@@ -1,0 +1,226 @@
+common/posib_err.lo: common/posib_err.cpp /usr/include/stdlib.h \
+ /usr/include/features.h /usr/include/bits/predefs.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/xlocale.h \
+ /usr/include/sys/types.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/bits/stdio2.h \
+ /usr/include/assert.h common/posib_err.hpp common/string.hpp \
+ /usr/include/string.h /usr/include/bits/string3.h \
+ /usr/include/c++/4.5/algorithm /usr/include/c++/4.5/utility \
+ /usr/include/c++/4.5/x86_64-linux-gnu/bits/c++config.h \
+ /usr/include/c++/4.5/x86_64-linux-gnu/bits/os_defines.h \
+ /usr/include/c++/4.5/x86_64-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/4.5/bits/stl_relops.h \
+ /usr/include/c++/4.5/bits/stl_pair.h /usr/include/c++/4.5/bits/move.h \
+ /usr/include/c++/4.5/cstddef /usr/include/c++/4.5/bits/concept_check.h \
+ /usr/include/c++/4.5/bits/stl_algobase.h \
+ /usr/include/c++/4.5/bits/functexcept.h \
+ /usr/include/c++/4.5/exception_defines.h \
+ /usr/include/c++/4.5/bits/cpp_type_traits.h \
+ /usr/include/c++/4.5/ext/type_traits.h \
+ /usr/include/c++/4.5/ext/numeric_traits.h \
+ /usr/include/c++/4.5/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.5/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.5/bits/stl_iterator.h \
+ /usr/include/c++/4.5/debug/debug.h /usr/include/c++/4.5/bits/stl_algo.h \
+ /usr/include/c++/4.5/cstdlib /usr/include/c++/4.5/bits/algorithmfwd.h \
+ /usr/include/c++/4.5/initializer_list \
+ /usr/include/c++/4.5/bits/stl_heap.h \
+ /usr/include/c++/4.5/bits/stl_tempbuf.h \
+ /usr/include/c++/4.5/bits/stl_construct.h /usr/include/c++/4.5/new \
+ /usr/include/c++/4.5/exception \
+ /usr/include/c++/4.5/bits/stl_uninitialized.h common/hash_fun.hpp \
+ common/parm_string.hpp \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include-fixed/limits.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ common/mutable_string.hpp common/ostream.hpp common/istream.hpp \
+ common/error.hpp common/errors.hpp common/ndebug.hpp common/gettext.h
+
+/usr/include/stdlib.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/predefs.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/bits/stdio2.h:
+
+/usr/include/assert.h:
+
+common/posib_err.hpp:
+
+common/string.hpp:
+
+/usr/include/string.h:
+
+/usr/include/bits/string3.h:
+
+/usr/include/c++/4.5/algorithm:
+
+/usr/include/c++/4.5/utility:
+
+/usr/include/c++/4.5/x86_64-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/4.5/x86_64-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/4.5/x86_64-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/4.5/bits/stl_relops.h:
+
+/usr/include/c++/4.5/bits/stl_pair.h:
+
+/usr/include/c++/4.5/bits/move.h:
+
+/usr/include/c++/4.5/cstddef:
+
+/usr/include/c++/4.5/bits/concept_check.h:
+
+/usr/include/c++/4.5/bits/stl_algobase.h:
+
+/usr/include/c++/4.5/bits/functexcept.h:
+
+/usr/include/c++/4.5/exception_defines.h:
+
+/usr/include/c++/4.5/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.5/ext/type_traits.h:
+
+/usr/include/c++/4.5/ext/numeric_traits.h:
+
+/usr/include/c++/4.5/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.5/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.5/bits/stl_iterator.h:
+
+/usr/include/c++/4.5/debug/debug.h:
+
+/usr/include/c++/4.5/bits/stl_algo.h:
+
+/usr/include/c++/4.5/cstdlib:
+
+/usr/include/c++/4.5/bits/algorithmfwd.h:
+
+/usr/include/c++/4.5/initializer_list:
+
+/usr/include/c++/4.5/bits/stl_heap.h:
+
+/usr/include/c++/4.5/bits/stl_tempbuf.h:
+
+/usr/include/c++/4.5/bits/stl_construct.h:
+
+/usr/include/c++/4.5/new:
+
+/usr/include/c++/4.5/exception:
+
+/usr/include/c++/4.5/bits/stl_uninitialized.h:
+
+common/hash_fun.hpp:
+
+common/parm_string.hpp:
+
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include-fixed/limits.h:
+
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+common/mutable_string.hpp:
+
+common/ostream.hpp:
+
+common/istream.hpp:
+
+common/error.hpp:
+
+common/errors.hpp:
+
+common/ndebug.hpp:
+
+common/gettext.h:

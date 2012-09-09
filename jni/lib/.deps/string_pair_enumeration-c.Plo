@@ -1,0 +1,9 @@
+lib/string_pair_enumeration-c.lo: lib/string_pair_enumeration-c.cpp \
+ common/string_pair.hpp common/string_pair_enumeration.hpp \
+ common/string_pair.hpp
+
+common/string_pair.hpp:
+
+common/string_pair_enumeration.hpp:
+
+common/string_pair.hpp:
