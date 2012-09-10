@@ -1,9 +1,10 @@
 /**
  * 
  */
-package gr.padeler.aspellchecker;
+package se.randomdev.aspellchecker;
 
 
+import se.randomdev.aspellchecker.R;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 

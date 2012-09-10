@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package gr.padeler.aspellchecker;
+package se.randomdev.aspellchecker;
 
 public final class R {
     public static final class array {

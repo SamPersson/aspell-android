@@ -1,7 +1,7 @@
 /**
  * 
  */
-package gr.padeler.aspellchecker;
+package se.randomdev.aspellchecker;
 
 import android.util.Log;
 

@@ -1,5 +1,5 @@
 /** Automatically generated file. DO NOT MODIFY */
-package gr.padeler.aspellchecker;
+package se.randomdev.aspellchecker;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;

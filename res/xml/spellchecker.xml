@@ -5,7 +5,7 @@
 
 <spell-checker xmlns:android="http://schemas.android.com/apk/res/android"
         android:label="@string/name"
-        android:settingsActivity="gr.padeler.aspellchecker.ASpellCheckerActivity">
+        android:settingsActivity="se.randomdev.aspellchecker.ASpellCheckerActivity">
     <subtype
             android:label="@string/subtype"
             android:subtypeLocale="sv"  />

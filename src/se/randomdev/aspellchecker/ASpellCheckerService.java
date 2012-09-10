@@ -1,7 +1,7 @@
 /**
  * 
  */
-package gr.padeler.aspellchecker;
+package se.randomdev.aspellchecker;
 
 
 import java.io.File;
@@ -51,8 +51,8 @@ public class ASpellCheckerService extends SpellCheckerService
 		// check if the data files are correctly copied from the assets.
 		try{
 			String dataDir = checkAndUpdateDataFiles();
-			SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-			String lang = prefs.getString("available_dicts", "sv");
+			//SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+			//String lang = prefs.getString("available_dicts", "sv");
 			
 			return new ASpellCheckerSession(dataDir,getContentResolver());
 			

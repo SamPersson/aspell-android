@@ -31,7 +31,7 @@ void log_word_list(AspellSpeller * speller, const AspellWordList *wl)
 	}
 }
 
-void Java_gr_padeler_aspellchecker_ASpell_destruct(JNIEnv * env, jobject _this)
+void Java_se_randomdev_aspellchecker_ASpell_destruct(JNIEnv * env, jobject _this)
 {
 	jclass cls = env->GetObjectClass(_this);
 	jfieldID fid = env->GetFieldID(cls, "nativePtr", "J");
@@ -40,7 +40,7 @@ void Java_gr_padeler_aspellchecker_ASpell_destruct(JNIEnv * env, jobject _this)
 	env->SetLongField(_this, fid, 0);
 }
 
-void Java_gr_padeler_aspellchecker_ASpell_setUserDictionary(JNIEnv * env, jobject _this, jobjectArray strings)
+void Java_se_randomdev_aspellchecker_ASpell_setUserDictionary(JNIEnv * env, jobject _this, jobjectArray strings)
 {
 	jclass cls = env->GetObjectClass(_this);
 	jfieldID fid = env->GetFieldID(cls, "nativePtr", "J");
@@ -69,7 +69,7 @@ void Java_gr_padeler_aspellchecker_ASpell_setUserDictionary(JNIEnv * env, jobjec
 		                    "NDK:ASpell User dictionary updated");
 }
 
-jboolean Java_gr_padeler_aspellchecker_ASpell_initialize(JNIEnv * env,
+jboolean Java_se_randomdev_aspellchecker_ASpell_initialize(JNIEnv * env,
                                                          jobject _this,
                                                          jstring dataDirStr,
                                                          jstring localeStr)
@@ -126,7 +126,7 @@ jboolean Java_gr_padeler_aspellchecker_ASpell_initialize(JNIEnv * env,
 	return JNI_TRUE;
 }
 
-jobjectArray Java_gr_padeler_aspellchecker_ASpell_check(JNIEnv * env,
+jobjectArray Java_se_randomdev_aspellchecker_ASpell_check(JNIEnv * env,
                                                         jobject _this,
                                                         jstring wordStr)
 {
