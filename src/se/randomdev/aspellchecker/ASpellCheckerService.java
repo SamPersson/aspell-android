@@ -10,14 +10,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 import android.content.ContentResolver;
-import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.database.ContentObserver;
 import android.database.Cursor;
-import android.os.Handler;
-import android.preference.PreferenceManager;
 import android.provider.ContactsContract.Contacts;
 import android.provider.UserDictionary.Words;
 import android.service.textservice.SpellCheckerService;
@@ -34,7 +32,7 @@ public class ASpellCheckerService extends SpellCheckerService
 
 	private static final String DATA = "data";
 	private static final String TAG = ASpellCheckerService.class.getSimpleName();
-	private static final boolean DBG = true;
+	private static final boolean DBG = false;
 	
 	private static final String[] PROJECTION = {
 	                                            Words._ID,
@@ -44,6 +42,19 @@ public class ASpellCheckerService extends SpellCheckerService
 	                                            Words.APP_ID
 	                                        };
 	
+	@Override
+	public void onCreate()
+	{
+	    super.onCreate();
+	    Log.d(TAG,"ASpellCheckerService.onCreate");
+	}
+	
+	@Override
+	public void onDestroy()
+	{
+	    super.onDestroy();
+	    Log.d(TAG,"ASpellCheckerService.onDestroy");
+	}
 
 	@Override
 	public Session createSession()
@@ -103,8 +114,9 @@ public class ASpellCheckerService extends SpellCheckerService
 	
 	private static class ASpellCheckerSession extends Session
 	{
-		private String mLocale;
+		private static String mLocale;
 		private ASpell bridge;
+		private static ASpell sharedBridge;
 		private String dataDir;
 		private ContentResolver contentResolver;
 		
@@ -113,6 +125,8 @@ public class ASpellCheckerService extends SpellCheckerService
 			this.dataDir = dataDir;
 			this.contentResolver = contentResolver;
 		}
+		
+		private HashMap<String, String []> cache = new HashMap<String, String[]>();
 		
 		protected synchronized void UserDictionaryUpdated()
 		{
@@ -143,16 +157,23 @@ public class ASpellCheckerService extends SpellCheckerService
 			//Log.d(TAG, "User dictionary: "+ Arrays.toString(words.toArray(new String[]{})));
 			
 			bridge.setUserDictionary(words.toArray(new String[]{}));
+			cache.clear();
 		}
-
+		
 		@Override
 		public synchronized void onCreate()
 		{
-			
+			if(getLocale().equals(mLocale))
+			{
+				bridge = sharedBridge;
+				Log.d(TAG, "Reusing ASpell Speller. DataDir: "+dataDir+" Lang: "+mLocale);
+				return;
+			}
 			mLocale = getLocale();
+			
 			Log.d(TAG, "Creating ASpell Speller. DataDir: "+dataDir+" Lang: "+mLocale);
 			
-			bridge = new ASpell(dataDir,mLocale);
+			sharedBridge = bridge = new ASpell(dataDir,mLocale);
 			
 			contentResolver.registerContentObserver(Words.CONTENT_URI, true, new ContentObserver(null) {
 			    @Override
@@ -166,36 +187,39 @@ public class ASpellCheckerService extends SpellCheckerService
 		@Override
 		public synchronized SuggestionsInfo onGetSuggestions(TextInfo textInfo, int suggestionsLimit)
 		{
-			mLocale = getLocale();
+			if(bridge == null)
+				return null;
+			
 			String text = textInfo.getText();
-			long start = System.currentTimeMillis();
-			String []suggestions = bridge.check(text);
-			long end = System.currentTimeMillis();
-			String code = suggestions[0];
-			Log.d(TAG, "===Suggestion code ==> "+code);
-
-			if(suggestions.length>1) // we have some suggestions
+			String [] suggestions;
+			long start = 0, end = 0;
+			
+			if(cache.containsKey(text))
 			{
+				suggestions = cache.get(text);
+			}
+			else
+			{
+				start = System.currentTimeMillis();
+				suggestions = bridge.check(text);
+				end = System.currentTimeMillis();
+	
 				if(suggestions.length>suggestionsLimit+1)
 				{
-					String []tmp = new String[suggestionsLimit];
-					System.arraycopy(suggestions, 1, tmp, 0, suggestionsLimit);
-					suggestions = tmp;
+					suggestions = Arrays.copyOf(suggestions, suggestionsLimit+1);
 				}
-				else  // just keep all suggestions
-				{
-					String []tmp = new String[suggestions.length-1];
-					System.arraycopy(suggestions, 1, tmp, 0, tmp.length);
-					suggestions = tmp;
-				}
+				
+				cache.put(text, suggestions);
 			}
-			else{
-				suggestions = new String[]{};
-			}
+			
+			String code = suggestions[0];
+			Log.d(TAG, "===Suggestion code ==> "+code);
+			
+			suggestions = Arrays.copyOfRange(suggestions, 1, suggestions.length);
 			
 			if (DBG)
 			{
-				Log.d(TAG, "["+mLocale+"].onGetSuggestions ("+textInfo.getText()+","+suggestionsLimit+"): " + " Code : "+code+". Time to ASPELL: "+(end-start)+" ms.");
+				Log.d(TAG, "["+getLocale()+"].onGetSuggestions ("+textInfo.getText()+","+suggestionsLimit+"): " + " Code : "+code+". Time to ASPELL: "+(end-start)+" ms.");
 			}
 			int flags;
 			if("1".equals(code) || suggestions.length > 0 && suggestions[0].equals(text))// Aspell bug?

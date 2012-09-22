@@ -149,8 +149,8 @@ jobjectArray Java_se_randomdev_aspellchecker_ASpell_check(JNIEnv * env,
 
 	jboolean isCopy;
 	const char * word = env->GetStringUTFChars(wordStr, &isCopy);
-	__android_log_print(ANDROID_LOG_DEBUG, DEBUG_TAG,
-	                    "NDK:ASpell Checking word [%s]", word);
+	//__android_log_print(ANDROID_LOG_DEBUG, DEBUG_TAG,
+	//                    "NDK:ASpell Checking word [%s]", word);
 
 	int have = aspell_speller_check(speller, word, -1);
 	char code[5];
